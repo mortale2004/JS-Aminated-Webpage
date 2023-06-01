@@ -1,0 +1,196 @@
+/* Import of google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+
+
+/* Setting to all elements */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform:uppercase;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    overflow: hidden;
+}
+
+/* Setting root element HTML */
+:root{
+    font-size: 10px;
+}
+
+
+/* Container */
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(rgba(0, 0, 0, 103), rgba(0, 0, 0, 0.207)) , url('./images/bgThi.jpg');
+    height: 100vh;
+    background-size: 200%;
+    background-position: center;
+    position: relative;
+    background-repeat: no-repeat;
+    transition: all 2s;
+}
+
+/* Navbar */
+.container nav{
+    width: 100vw;
+    background: linear-gradient(black, transparent);
+    padding: 10px;
+    height: 90px;
+}
+.container nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 2s;
+    transform: translateY(-10rem);
+}
+.container nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+}
+.container nav ul li{
+    list-style-type: none;
+    padding: 5px;
+}
+.container nav ul li a img{
+    width: 40px;
+}
+
+
+/* Main Section */
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+/* Paragraph in main */
+main p{
+    font-size: 5rem;
+    letter-spacing: 0.8rem;
+    transition: all 2s;
+    transform: translateY(-10rem);
+}
+
+/* h1 in main */
+main h1{
+    font-size: 17rem;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+    line-height: 16rem;
+    transition: all 2s;
+    transform: translateY(-25rem);
+}
+
+/* Button in main */
+main button{
+    background: linear-gradient(140deg, white, blue, blue, blue);
+    position: absolute;
+    box-shadow: 0 0 5px rgb(54, 54, 252);
+    padding: 1.2rem 5rem;
+    border: none;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    margin: 17rem 0 0 0;
+    z-index: 10;
+    transition: all 2s;
+    transform: translateY(50rem);
+}
+
+/* Buttons at right side */
+.buttons{
+    display: flex;
+    position: absolute;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    right: 1rem;
+    top: 50%;
+    background-color: white;
+    padding: 1rem 1rem;
+    border-radius: 2rem;
+    transition: all 2s;
+    transform: translate(10rem, -8rem);
+}
+.buttons a{
+    margin: 5px 0;
+}
+.buttons a img{
+    background-color: black;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+
+
+/* Man */
+.man {
+    position: absolute;
+    overflow: hidden;
+    /* z-index: -1; */
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./images/man.png);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-size: 10%;
+    background-position-y: 100%;
+    transition: all 2s;
+}
+
+@keyframes moveMan {
+    0%{
+        background-position-y: 120%;
+        background-size: 10%;
+    }
+    100%{
+        background-position-y: 100%;
+        background-size: 15%;
+    }
+
+}
+
+
+/* Clouds */
+.cloud1,
+.cloud2{
+    position: absolute;
+    width: 80rem;
+    height: 40rem;
+    bottom: -2rem;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* Left Cloud */
+.cloud1{
+    left: 0;
+    background-image: url('./images/cloud.png');
+    transition: all 2s;
+    /* transform: translate(-10rem, 10rem); */
+}
+
+
+
+
+/* Right Cloud */
+.cloud2{
+    right: 0 !important;
+    background-image: url('./images/cloud2.png');
+    transition: all 2s;
+    /* transform: translate(10rem, 10rem); */
+}
+
+.buttons a:hover{
+    background-color: red;
+}
